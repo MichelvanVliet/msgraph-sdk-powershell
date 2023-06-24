@@ -2,13 +2,13 @@
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 $params = @{
-	DisplayName = "Connected organization name"
-	Description = "Connected organization description"
-	IdentitySources = @(
+	displayName = "Connected organization name"
+	description = "Connected organization description"
+	identitySources = @(
 		@{
 			"@odata.type" = "#microsoft.graph.domainIdentitySource"
-			DomainName = "example.com"
-			DisplayName = "example.com"
+			domainName = "example.com"
+			displayName = "example.com"
 		}
 	)
 	State = "proposed"
